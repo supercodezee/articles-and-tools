@@ -1,0 +1,126 @@
+.articles {
+  padding: 56px 0;
+}
+
+.articlesHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.articleImg {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articleItem {
+  border-radius: 1rem;
+  border: 1px solid #D4D4D4;
+  height: 100%;
+  max-width: 384px;
+  overflow: hidden;
+  transition: all .4s ease;
+  width: 100%;
+}
+
+.articleItem:hover {
+  box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%), 0 0.9375rem 1.40625rem rgb(90 97 105 / 10%), 0 0.25rem 0.53125rem rgb(90 97 105 / 12%), 0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.articleTitle {
+  margin-top: 1rem;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.articleItem:hover .articleTitle {
+  color: #176ACF;
+  opacity: .8;
+}
+
+.articleText {
+  margin: 1rem 0 0 0;
+  line-height: 1.44;
+}
+
+/* .articlesWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+} */
+
+.btnGradient {
+  background-image: linear-gradient(45deg, rgba(227, 130, 21, 1) 0%, rgba(250, 167, 74, 1) 100%);
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.43;
+  padding: .5rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
+  width: calc(100% - 3.125rem);
+}
+
+.infoWrapper {
+  padding: 1.5rem 1rem;
+}
+
+.mainTitle {
+  font: 600 40px/1.25 "Lora";
+}
+
+@media (max-width: 1200px) {
+  .mainTitle {
+    font-size: 34px;
+  }
+}
+
+@media (max-width:1024px) {
+  .articleTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .articles {
+    padding: 42px 0;
+  }
+}
+
+@media (max-width:960px) {
+   .container {
+     margin-right: 0;
+   }
+}
+
+@media (max-width: 768px) {
+  .articles {
+    padding: 32px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: calc(100% - 1.5rem);
+  }
+}
+
+@media (max-width: 320px) {
+  .mainTitle {
+    font-size: 25px;
+  }
+}
+
+
+
+/* DEMO PURPOSES ONLY  */
+.articleImg {
+  background-color: #FFE1E8;
+}
