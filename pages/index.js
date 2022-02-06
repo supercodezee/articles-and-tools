@@ -45,7 +45,7 @@ const sliderSettings = {
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
-        variableWith: true,
+        variableWidth: true,
       }
     },
     {
@@ -54,7 +54,6 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        variableWith: true,
         // centerMode: true,
       }
     }
@@ -84,7 +83,7 @@ export default function Articles() {
             <Slider {...sliderSettings}>
               {content.map((article, id) => {
                 return (
-                  <Link key={id} href={article.url} passHref>
+                  <Link key={id} href={article.url} passHref className={styles.linkContainer}>
                     <article className={styles.articleItem}>
                       <div
                         className={styles.articleImg}
