@@ -36,7 +36,6 @@ h2, h3 {
 }
 
 .slick-initialized .slick-slide {
-  width: calc((100% / 3) - (1.5rem * 2 / 3)) !important;
   margin-right: 1.5rem;
 }
 
@@ -78,38 +77,20 @@ h2, h3 {
   .slick-list {
     padding: 0 !important;
   }
-
-  .slick-initialized .slick-slide {
-    width: 384px !important
-  }
-
-  .slick-track {
-    width: 1200px !important;
-  }
 }
 
 @media (max-width:550px) {
   .slick-initialized .slick-slide {
-    width: 311px !important;
     margin-right: 1rem;
   }
 
   .slick-initialized .slick-slide:last-child {
     margin-right: 0;
   }
-
-  .slick-track {
-    width: 965px !important;
-  }
 }
 
-
-@media (max-width:320px) {
+@media only screen and (min-width: 961px) {
   .slick-initialized .slick-slide {
-    width: 260px !important;
-  }
-
-  .slick-track {
-    width: 812px !important;
+    width: calc((100% / 3) - (1.5rem * 2 / 3)) !important;
   }
 }
