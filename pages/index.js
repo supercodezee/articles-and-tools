@@ -42,7 +42,7 @@ const sliderSettings = {
     {
       breakpoint: 960,
       settings: {
-        slidesToShow: 1.5,
+        slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         variableWith: true,
@@ -54,6 +54,7 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        variableWith: true,
         // centerMode: true,
       }
     }
