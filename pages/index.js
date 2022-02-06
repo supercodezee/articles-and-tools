@@ -45,6 +45,7 @@ const sliderSettings = {
         slidesToShow: 1.5,
         slidesToScroll: 1,
         dots: true,
+        variableWith: true,
       }
     },
     {
