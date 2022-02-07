@@ -54,7 +54,7 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        variableWidth: true,
+//         variableWidth: true,
         // centerMode: true,
       }
     }
