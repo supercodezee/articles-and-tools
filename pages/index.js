@@ -45,7 +45,7 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        variableWidth: true,
+        
       }
     },
     {
@@ -54,6 +54,7 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        variableWidth: true,
         // centerMode: true,
       }
     }
@@ -83,22 +84,24 @@ export default function Articles() {
             <Slider {...sliderSettings}>
               {content.map((article, id) => {
                 return (
-                  <Link key={id} href={article.url} passHref className={styles.linkContainer}>
-                    <article className={styles.articleItem}>
-                      <div
-                        className={styles.articleImg}
-                        role="figure"
-                        style={{backgroundImage: `url(${article.img})`}}>
-                      </div>
-                      <div className={styles.infoWrapper}>
-                        <Link href={article.url}>
-                          <a className={styles.btnGradient}>{article.type}</a>
-                        </Link>
-                        <h3 className={styles.articleTitle}>{article.title}</h3>
-                        <p className={styles.articleText}>{article.body}</p>
-                      </div>
-                    </article>
-                  </Link>
+                  <div className={styles.linkContainer}>
+                    <Link key={id} href={article.url} passHref>
+                      <article className={styles.articleItem}>
+                        <div
+                          className={styles.articleImg}
+                          role="figure"
+                          style={{backgroundImage: `url(${article.img})`}}>
+                        </div>
+                        <div className={styles.infoWrapper}>
+                          <Link href={article.url}>
+                            <a className={styles.btnGradient}>{article.type}</a>
+                          </Link>
+                          <h3 className={styles.articleTitle}>{article.title}</h3>
+                          <p className={styles.articleText}>{article.body}</p>
+                        </div>
+                      </article>
+                    </Link>
+                  </div>
                 )
               })}
             </Slider>
