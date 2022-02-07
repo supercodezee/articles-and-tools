@@ -88,11 +88,7 @@
 }
 
 @media only screen and (max-width: 960px) {
-  .linkContainer {
-    max-width: 50%;
-    margin: auto;
-  }
-  .linkContainer, .articleItem {
+  .articleItem {
     width: 100%;
   }
 }
@@ -101,8 +97,8 @@
   .articles {
     padding: 32px 0;
   }
-  .linkContainer {
-    max-width: 384px;
+  .mainTitle {
+    font-size: 28px;
   }
 }
 
