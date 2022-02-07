@@ -42,7 +42,7 @@ const sliderSettings = {
     {
       breakpoint: 960,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
         
@@ -81,7 +81,7 @@ export default function Articles() {
             <h2 className={styles.mainTitle}>{header}</h2>
           </div>
           <div className={styles.articlesWrapper}>
-            <Slider {...sliderSettings}>
+            <Slider {...sliderSettings} className="test">
               {content.map((article, id) => {
                 return (
                   <div key={id} className="link-container" >
