@@ -84,7 +84,7 @@ export default function Articles() {
             <Slider {...sliderSettings}>
               {content.map((article, id) => {
                 return (
-                  <div className={styles.linkContainer}>
+                  <div className="link-container">
                     <Link key={id} href={article.url} passHref>
                       <article className={styles.articleItem}>
                         <div
