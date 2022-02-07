@@ -54,7 +54,7 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-//         variableWidth: true,
+        // variableWidth: true,
         // centerMode: true,
       }
     }
@@ -81,11 +81,11 @@ export default function Articles() {
             <h2 className={styles.mainTitle}>{header}</h2>
           </div>
           <div className={styles.articlesWrapper}>
-            <Slider {...sliderSettings} className="test">
+            <Slider {...sliderSettings}>
               {content.map((article, id) => {
                 return (
-                  <div key={id} className="link-container" >
-                    <Link href={article.url} passHref>
+           
+                    <Link key={id} href={article.url} passHref>
                       <article className={styles.articleItem}>
                         <div
                           className={styles.articleImg}
@@ -101,7 +101,7 @@ export default function Articles() {
                         </div>
                       </article>
                     </Link>
-                  </div>
+                  
                 )
               })}
             </Slider>
