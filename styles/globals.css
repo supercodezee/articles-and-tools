@@ -69,9 +69,6 @@ h2, h3 {
   bottom: calc(-1.5rem - 29px);
 }
 
-.slick-list {
-  overflow: visible;
-}
 
 @media (max-width: 960px) {
   .slick-list {
