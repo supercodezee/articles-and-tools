@@ -53,7 +53,7 @@ h2, h3 {
 }
 
 .slick-dots li button {
-  border: 1px solid #2f5b88;
+  border: 1px solid #323339;
   border-radius: 50%;
 }
 
@@ -62,7 +62,7 @@ h2, h3 {
 }
 
 .slick-dots li.slick-active button {
-  background-color: #2F5B88;
+  background-color: #323339;
 }
 
 .slick-dots {
